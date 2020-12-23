@@ -6,7 +6,7 @@ public class Cleaner {
     private DayTime dayTime2 = DayTime.EVENING;
 
     public DayTime getDayTime() {
-        System.out.println("Прибиральник працює");
+        return dayTime;
     }
 
     public void setDayTime(DayTime dayTime) {
