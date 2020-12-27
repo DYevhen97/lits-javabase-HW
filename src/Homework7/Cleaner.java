@@ -2,14 +2,23 @@ package Homework7;
 
 public class Cleaner {
 
-    private DayTime dayTime = DayTime.DAY;
-    private DayTime dayTime2 = DayTime.EVENING;
+    private Mammal mammal;
+    private Bird bird;
 
-    public DayTime getDayTime() {
-        return dayTime;
+    public Cleaner(Mammal mammal) {
+        this.mammal = mammal;
     }
 
-    public void setDayTime(DayTime dayTime) {
-        this.dayTime = dayTime;
+    public Cleaner(Bird bird) {
+        this.bird = bird;
+    }
+
+    public void CleanMammal() {
+        System.out.println("Cleaner is cleaning after " + mammal.getName());
+        mammal.feed();
+    }
+    public void CleanBird() {
+        System.out.println("Cleaner is cleaning after " + bird.getName());
+        bird.feed();
     }
 }

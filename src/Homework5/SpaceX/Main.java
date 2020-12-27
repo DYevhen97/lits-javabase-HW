@@ -11,7 +11,5 @@ public class Main {
         SpaceX3_Falcon9FT spaceX3_falcon9FT = new SpaceX3_Falcon9FT(2018, 549054, 70.0, 3.7, true, 101);
 
         SpaceX4_Falcon9Block5 spaceX4_falcon9Block5 = new SpaceX4_Falcon9Block5(2018, 549054, 70.0, 3.66, true, 45, 15600, 1);
-
-        SpaceXFalcon1.info();
     }
 }
