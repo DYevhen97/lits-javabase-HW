@@ -18,16 +18,16 @@ public class ZooMain {
         Cleaner cleaner4 = new Cleaner(dima);
 
         System.out.println(DayTime.MORNING);
-        Visitor visitor = new Visitor();
+        Visitor visitor = new Visitor("Олег");
+        Visitor visitor2 = new Visitor("Володя");
+        Visitor visitor3 = new Visitor("Марта");
+        Visitor visitor4 = new Visitor("Коля");
         visitor.enter();
         i++;
-        Visitor2 visitor2 = new Visitor2();
         visitor2.enter();
         i++;
-        Visitor3 visitor3 = new Visitor3();
         visitor3.enter();
         i++;
-        Visitor4 visitor4 = new Visitor4();
         visitor4.enter();
         i++;
         feeder.feedMammal();
@@ -36,21 +36,21 @@ public class ZooMain {
         feeder4.feedBird();
 
         System.out.println(DayTime.DAY);
-        feeder.feedMammal();
-        Visitor5 visitor5 = new Visitor5();
+        Visitor visitor5 = new Visitor("Сергій");
+        Visitor visitor6 = new Visitor("Оксана");
         visitor5.enter();
         i++;
-        Visitor6 visitor6 = new Visitor6();
         visitor6.enter();
         i++;
         feeder.feedMammal();
-        cleaner.CleanMammal();
+        feeder.feedMammal();
+        cleaner.cleanMammal();
         feeder2.feedMammal();
-        cleaner2.CleanMammal();
+        cleaner2.cleanMammal();
         feeder3.feedBird();
-        cleaner3.CleanBird();
+        cleaner3.cleanBird();
         feeder4.feedBird();
-        cleaner4.CleanBird();
+        cleaner4.cleanBird();
 
         System.out.println(DayTime.EVENING);
         visitor.exit();

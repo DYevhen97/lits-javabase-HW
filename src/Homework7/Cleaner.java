@@ -13,11 +13,11 @@ public class Cleaner {
         this.bird = bird;
     }
 
-    public void CleanMammal() {
+    public void cleanMammal() {
         System.out.println("Cleaner is cleaning after " + mammal.getName());
         mammal.feed();
     }
-    public void CleanBird() {
+    public void cleanBird() {
         System.out.println("Cleaner is cleaning after " + bird.getName());
         bird.feed();
     }
