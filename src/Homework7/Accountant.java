@@ -2,11 +2,10 @@ package Homework7;
 
 public class Accountant {
 
-    int j = 100;
-    //j - ціна за квиток
+    int ticketPrice = 100;
 
-    public void income(int numberofvisitors){
-        int income = numberofvisitors * j;
+    public void income(int numberOfVisitors){
+        int income = numberOfVisitors * ticketPrice;
         System.out.println("Good job. This days income is " + income + " hryvnias!");
     }
 }

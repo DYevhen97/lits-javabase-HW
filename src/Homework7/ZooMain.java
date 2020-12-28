@@ -3,7 +3,7 @@ package Homework7;
 public class ZooMain {
     public static void main(String[] args) {
 
-        int i = 0;
+        int numberOfVisitors = 0;
         Mammal alex = new Lion();
         Mammal george = new Monkey();
         Bird carl = new Parrot();
@@ -23,13 +23,13 @@ public class ZooMain {
         Visitor visitor3 = new Visitor("Марта");
         Visitor visitor4 = new Visitor("Коля");
         visitor.enter();
-        i++;
+        numberOfVisitors++;
         visitor2.enter();
-        i++;
+        numberOfVisitors++;
         visitor3.enter();
-        i++;
+        numberOfVisitors++;
         visitor4.enter();
-        i++;
+        numberOfVisitors++;
         feeder.feedMammal();
         feeder2.feedMammal();
         feeder3.feedBird();
@@ -39,9 +39,9 @@ public class ZooMain {
         Visitor visitor5 = new Visitor("Сергій");
         Visitor visitor6 = new Visitor("Оксана");
         visitor5.enter();
-        i++;
+        numberOfVisitors++;
         visitor6.enter();
-        i++;
+        numberOfVisitors++;
         feeder.feedMammal();
         feeder.feedMammal();
         cleaner.cleanMammal();
@@ -60,7 +60,7 @@ public class ZooMain {
         visitor5.exit();
         visitor6.exit();
         Accountant accountant = new Accountant();
-        accountant.income(i);
+        accountant.income(numberOfVisitors);
     }
 }
 

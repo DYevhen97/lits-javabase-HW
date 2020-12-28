@@ -2,16 +2,16 @@ package Homework7;
 
 public class Visitor {
 
-    String VisitorName;
+    String visitorName;
 
     public Visitor(String VisitorName){
-        this.VisitorName = VisitorName;
+        this.visitorName = VisitorName;
     }
     public void enter(){
-        System.out.println("Visitor " + VisitorName + " enters the zoo. Pay up 100 hryvnias.");
+        System.out.println("Visitor " + visitorName + " enters the zoo. Pay up 100 hryvnias.");
     }
 
     public void exit(){
-        System.out.println("The visitor " + VisitorName + " leaves the zoo.");
+        System.out.println("The visitor " + visitorName + " leaves the zoo.");
     }
 }
