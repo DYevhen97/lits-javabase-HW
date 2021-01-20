@@ -1,4 +1,4 @@
-package Homework10;
+package Homework10.Placeholder;
 
 import java.util.Scanner;
 
