@@ -23,7 +23,7 @@ tasks.add(new Task("Persona 4 Golden", 2012, Type.Done, Arrays.asList("Game")));
 tasks.add(new Task("Family Guy", 1999, Type.New, Arrays.asList("Cartoon")));
 tasks.add(new Task("Sonic The Hedgehog 2", 1992, Type.Done, Arrays.asList("Game")));
         tasks.stream()
-        .map(e -> e.getTags())
+        .map(e -> e.getCreationDate())
         .flatMap(e -> e.stream)
         .forEach(System.out.println(e));
     }
