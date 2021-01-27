@@ -2,19 +2,24 @@ package Homework14;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class Task {
 
     private String title;
-    private int creationDate;
-    private Enum Type;
+    String creationDate;
+    Enum type;
     private List<String> tags = new ArrayList();
 
-    public Task(String title, int creationDate, Enum type, List<String> tags) {
+    public Task(String title, String creationDate, Enum type) {
         this.title = title;
         this.creationDate = creationDate;
-        Type = type;
+        this.type = type;
+    }
+
+    public Task(String title, String creationDate, Enum type, List<String> tags) {
+        this.title = title;
+        this.creationDate = creationDate;
+        type = type;
         this.tags = tags;
     }
 
@@ -24,22 +29,6 @@ public class Task {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public int getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(int creationDate) {
-        this.creationDate = creationDate;
-    }
-
-    public Enum getType() {
-        return Type;
-    }
-
-    public void setType(Enum type) {
-        Type = type;
     }
 
     public List<String> getTags() {
