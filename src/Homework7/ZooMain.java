@@ -30,8 +30,16 @@ public class ZooMain {
         numberOfVisitors++;
         visitor4.enter();
         numberOfVisitors++;
-        feeder.feedMammal();
-        feeder2.feedMammal();
+        try {
+            feeder.feedMammal();
+        } catch (Error e){
+            System.out.println(e);
+        }
+        try {
+            feeder2.feedMammal();
+        } catch (Error e){
+            System.out.println(e);
+        }
         feeder3.feedBird();
         feeder4.feedBird();
 
