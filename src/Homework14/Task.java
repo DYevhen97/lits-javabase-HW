@@ -19,7 +19,7 @@ public class Task {
     public Task(String title, String creationDate, Enum type, List<String> tags) {
         this.title = title;
         this.creationDate = creationDate;
-        type = type;
+        this.type = type;
         this.tags = tags;
     }
 

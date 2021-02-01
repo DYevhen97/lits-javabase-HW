@@ -94,6 +94,12 @@ tasks.add(fourty);
          .count();
         System.out.println(t);
 
+        System.out.println("3. Знайти title усіх прочитаних (Done) тасків і відсортувати по даті");
+        tasks.stream()
+                .sorted((i1, i2) -> i1.creationDate.compareTo(i2.creationDate))
+                .filter(task -> task.type.equals(Type.Done))
+                .forEach(e -> System.out.println(e.getTitle() + " " + e.creationDate));
+
         System.out.println("4. Знайти всі унікальні title");
         System.out.println("5. Знайти усі таски з унікальним title");
         tasks.stream()
@@ -106,6 +112,12 @@ tasks.add(fourty);
                 .sorted((i1, i2) -> i1.creationDate.compareTo(i2.creationDate))
                 .limit(10)
                 .forEach(e -> System.out.println(e.creationDate));
+
+        System.out.println("7. Знайти кількість прочитаних (Done) тасків");
+        Long l = tasks.stream()
+                .filter(task -> task.type.equals(Type.Done))
+                .count();
+        System.out.println(l);
 
         System.out.println("8. Знайти всі унікальні tags у всіх тасках");
         tasks.stream()
